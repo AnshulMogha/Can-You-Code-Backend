@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.3.1",
+    "helmet": "^7.1.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.3",
+    "morgan": "^1.10.0",
+    "xss-clean": "^0.1.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "can-you-code",
+  "version": "1.0.0",
+  "description": "\"Intial Description\"",
+  "main": "server.js",
+  "author": "Anshul",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.1.1",
+    "eslint": "^9.1.1",
+    "globals": "^15.1.0"
+  }
+}
