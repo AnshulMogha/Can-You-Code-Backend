@@ -9,7 +9,7 @@ const createAndSendToken = function (user, res) {
     expiresIn: process.env.JWT_EXPIRES_IN,
   });
   const cookiesOption = {
-    sameSite: "strict",
+    sameSite: "None",
     expires: new Date(
       Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
     ),
@@ -115,7 +115,7 @@ exports.login = catchError(async function (req, res) {
 });
 exports.logout = catchError(async function (req, res) {
   const cookiesOption = {
-    sameSite: "Strict",
+    sameSite: "None",
     expires: new Date(Date.now() + 1000 * 60),
     httpOnly: true,
   };
